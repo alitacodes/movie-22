@@ -1,0 +1,113 @@
+.background{
+    padding: 4px 20px;
+    background-color: rgb(125, 197, 251);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.background:hover{
+    background-color: #4a4e69;
+}
+
+header {
+    font-family: Rubik Vinyl;
+    padding: 20px;
+    background-color: rgb(90, 235, 228);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(19, 2, 89, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 30px;
+}
+
+.parent {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 80vh;          
+    background-color: #11a2b9; 
+    margin: 0;
+    box-shadow: 0 4px 10px rgba(19, 2, 89, 0.5);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .content {
+    text-align: center; /* Center the content inside */
+  }
+  
+iframe {
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 300px;
+    width: 600px;
+}
+/* Default Light Mode Styles */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.flip-button {
+    padding: 10px 20px;
+    background-color: #4a4e69;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.flip-button:hover {
+    background-color: #22223b;
+}
+
+/* Dark Mode Styles (when the body has a class of 'dark-mode') */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.flip-button.dark-mode {
+    background-color: #f2e9e4;
+    color: #333;
+}
+
+.flip-button{
+    font-family:Rubik Vinyl, sans-serif;
+}
+
+.flip-button.dark-mode:hover {
+    background-color: #c9ada7;
+}
+
+.style {
+    font-family:Rubik Vinyl, sans-serif;
+    color:rgb(4, 4, 82) ;
+    background-color: rgb(90, 235, 228);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(19, 2, 89, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.style:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(19, 2, 89, 0.5);
+}
+
+p{
+    font-size: medium;
+    color:rgb(7, 94, 161) ;
+}

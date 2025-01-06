@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIE</title>
+    <link rel="stylesheet" href="working.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
+</head>
+<body>
+    <fieldset>
+        
+        <header>
+            <nav>
+                <h1 id="Title" style="font-family: Rubik Vinyl; text-align: center; color: rgb(4, 4, 82); text-shadow: 5px; "> (: Entertainment Corner :)</h1>
+                <h5 style="text-align: center; color: rgb(7, 94, 161);">--Get free movies here--</h5>
+                <button id="dark-mode-toggle" class="flip-button">Dark Mode</button>
+  
+            </nav>
+        </header>
+        <br>
+        <div class="parent">
+            <div class="content">
+                <label for="movie_name" style="color: white;">Enter Movie Code: </label><input style="background-color:rgb(181, 208, 255) ;" id="movie_name" type="text">&nbsp&nbsp<button class="background" id="update_btn" style="color: white;">Load Movie</button><br>
+                <iframe id="movie_iframe" src="https://vidsrc.xyz/embed/movie?imdb=tt13186482" referrerpolicy="origin" allowfullscreen ></iframe>
+            </div>
+        </div>
+
+        <script>
+            // Get references to elements
+            const movieInput = document.getElementById('movie_name');
+            const updateButton = document.getElementById('update_btn');
+            const iframe = document.getElementById('movie_iframe');
+
+            // Add event listener to the button
+            updateButton.addEventListener('click', () => {
+                const movieCode = movieInput.value.trim(); // Get and trim the input value
+                if (movieCode) {
+                    // Update the iframe src
+                    iframe.src = `https://vidsrc.xyz/embed/movie?imdb=${movieCode}`;
+                } else {
+                    alert('Please enter a valid movie code.');
+                }
+            });
+        </script>
+        <br>
+        <br>
+        <h2 class="style">Auto Update
+            <p>Movies are automatically updated with the latest content.</p>
+        </h2>
+        <h2 class="style">Responsive
+            <p>Optimized for all devices, including mobile and desktop.</p>
+        </h2>
+        <h2 class="style">High Quality
+            <p>Stream movies in HD and 4K quality seamlessly.</p>
+        </h2>
+        <h2 class="style">Availability
+            <p>Access movies anytime, anywhere with a stable connection.</p>
+        </h2>
+    <script src="darkmode.js"></script>
+    <script src="event.js"></script>
+    <script src="index.js"></script>
+    <br>
+        <section>
+            <h3 style="font-family: Rubik Vinyl, sans-serif;">Creator</h3>
+            <img src="sni_photo1.jpg" alt="This is Sneha Mandal" width="200px">
+            <h4 style="font-family: Georgia, 'Times New Roman', Times, serif;">Sneha Mandal</h4>
+        </section>
+        <footer>
+            <p href="#" style="color: gray;">&copy; 2024 | Entertainment Corner</p>
+        </footer>
+    </fieldset>
+</body>
+</html>
